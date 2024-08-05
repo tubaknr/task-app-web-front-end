@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="https://kit.fontawesome.com/4a97d750ef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+        <a href="#" class="logo">Remember<span>That</span></a>
+        
+        <i class="fa-solid fa-bars menu-btn"></i>
+
+        <nav>
+    
+            <i class="fa-solid fa-xmark mobile-menu-exit"></i>
+
+            <ul class="primary-nav">
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+
+            
+            <ul class="secondary-nav">
+                <li><a href="#">Contact</a></li>
+                <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+            </ul>
+        
+    </nav>
+    </div>
+</div>
+    
+    <section class="hero">
+        <div class="container">
+            
+            <div class="left-col">
+                <p class="subhead">It's Nitty &amp; Gritty</p>
+                <h1 class="logo">A Task App That Doesn't Stink</h1>
+            
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for free</a>
+                    <a href="#" class="watch-video-cta">
+                        <i class="fa-solid fa-video"></i>
+                        Watch a video</a>
+                </div>
+            </div>
+
+            <div class="right-col">
+                <img src="images/illustration.svg" class="hero-img" alt="illustration">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Unlimited Tasks</li>
+                <li>SMS Task Reminders</li>
+                <li>Confetti Explosions upon Task Completions</li>
+                <li>Social Media Announcements</li>
+                <li>Real Time Collaboration</li>
+                <li>Other awsome features</li>
+            </ul>
+
+            <img src="images/holding-phone.jpg" alt="woman holding phone">
+        </div>
+
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                        tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+                        quia. Quo neque error repudiandae fuga? Ipsa.</blockquote>
+                        <cite>- Jane Doe</cite>
+                </li>
+
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                        optio, eaque rerum! officia aut! Impedit sit sunt quaerat, odit,
+                        tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+                        quia. Quo neque error repudiandae fuga? Ipsa.</blockquote>
+                        <cite>- Jane Doe</cite>
+                </li>
+
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                        optio, eaque rerum! psum debitis quas aliquid. Reprehenderit,
+                        quia. Quo neque error repudiandae fuga? Ipsa.</blockquote>
+                        <cite>- Jane Doe</cite>
+                </li>
+            </ul>
+        </div>
+        
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label class="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label class="message">Message</label>
+                    <textarea type="text" id="message" name="message" cols="30" rows="10"></textarea>
+
+                    <input type="button" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52871.867272357245!2d-118.44064755326744!3d34.08254205365308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc04d6d147ab%3A0xd6c7c379fd081ed1!2sBeverly%20Hills%2C%20CA%2C%20USA!5e0!3m2!1sen!2str!4v1722836099714!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const mobileBtn = document.querySelector(".menu-btn");
+        const mobileBtnExit = document.querySelector(".mobile-menu-exit");
+        const nav = document.querySelector("nav");
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn-open');
+        })
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn-open');
+        })
+    </script>
+
+
+</body>
+</html>
