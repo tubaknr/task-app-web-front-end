@@ -1,4 +1,4 @@
-A Task App's Website Responsive Front End
+A Task App's Website's Responsive Front End
 
 Made with:
 - Nextjs
