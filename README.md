@@ -1,7 +1,6 @@
 A Task App's Website's Responsive Front End
 
 Made with:
-- Nextjs
 - HTML, SCSS, Javascript.
 
 
